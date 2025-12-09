@@ -1,0 +1,33 @@
+<div class="calculator">
+  <div class="calculator-header">
+    <h1>Calculator</h1>
+  </div>
+
+  <div class="display">
+    {{ display }}
+  </div>
+
+  <div class="buttons">
+    <button class="btn btn-clear" (click)="clear()">C</button>
+    <button class="btn btn-operation" (click)="setOperation('/')">/</button>
+    <button class="btn btn-operation" (click)="setOperation('*')">×</button>
+    <button class="btn btn-operation" (click)="setOperation('-')">−</button>
+
+    <button class="btn" (click)="appendNumber('7')">7</button>
+    <button class="btn" (click)="appendNumber('8')">8</button>
+    <button class="btn" (click)="appendNumber('9')">9</button>
+    <button class="btn btn-operation btn-plus" (click)="setOperation('+')">+</button>
+
+    <button class="btn" (click)="appendNumber('4')">4</button>
+    <button class="btn" (click)="appendNumber('5')">5</button>
+    <button class="btn" (click)="appendNumber('6')">6</button>
+    <button class="btn btn-equals btn-equals-row1" (click)="calculate()">=</button>
+
+    <button class="btn" (click)="appendNumber('1')">1</button>
+    <button class="btn" (click)="appendNumber('2')">2</button>
+    <button class="btn" (click)="appendNumber('3')">3</button>
+
+    <button class="btn btn-zero" (click)="appendNumber('0')">0</button>
+    <button class="btn" (click)="appendDecimal()">.</button>
+  </div>
+</div>
