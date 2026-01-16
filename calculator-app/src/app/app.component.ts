@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+//Adding a test comment
 @Component({
   selector: 'app-root',
   imports: [],
